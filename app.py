@@ -166,3 +166,11 @@ with tab2:
 
     else:
         st.info("No records found. Add some analysis first.")
+
+
+import spacy
+from spacy.cli import download
+
+# Ensure the model is downloaded
+download("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
