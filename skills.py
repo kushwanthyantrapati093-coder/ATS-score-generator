@@ -1,11 +1,13 @@
 import spacy
 
-# Load English model
+# Load spaCy English model (already installed via requirements.txt)
 nlp = spacy.load("en_core_web_sm")
 
 # Predefined skills list
-skills_list = ['python', 'java', 'sql', 'machine learning', 'data analysis',
-               'excel', 'aws', 'docker', 'fastapi', 'pandas']
+skills_list = [
+    'python', 'java', 'sql', 'machine learning', 'data analysis',
+    'excel', 'aws', 'docker', 'fastapi', 'pandas'
+]
 
 # Extract skills from text
 def extract_skills(text):
